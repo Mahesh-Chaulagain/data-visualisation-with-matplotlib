@@ -1,0 +1,15 @@
+# Matplotlib
+-> a python library for creating charts and graphs
+-> works beautifully in combination with pandas
+-> Import :
+	>import matplotlib.pyplot as plt
+-> to plot the line graph
+	>plt.plot(x-values, y-values)
+
+# Styling the chart
+1. .figure(figsize=(width,height)) - allows us to resize our chart
+2. .xticks() - configures our x-axis
+3. .yticks() - configures our y-axis
+4. .xlabel() - add text to our x-axis
+5. .ylabel() - add text to our y-axis
+6. .ylim() - allows us to set a lower and upper bound
