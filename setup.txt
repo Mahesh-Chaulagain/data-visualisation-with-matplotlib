@@ -47,3 +47,12 @@
 	>reshaped_df.isna().values.any()
 -> the .isna() method is used with two more things being chained: "values" attribute and the "any()" method.
    this means that we don't have to search through the entire DataFrame to spot if .isna() is True
+
+# Rolling mean
+-> time-series data can be quite noisy with lots of up and down spikes which make it difficult to see what's 
+   going on
+-> a useful technique to make a trend apparent is to smooth out the observations by taking an average
+-> is constructed by averaging observations
+-> we calculate the average in a window of time and move it forward by one observations at a time
+-> pandas has two handy methods built in for this texhnique: rolling() and mean(). we can chain these two
+   methods up to create a DataFrame made up of the averaged observations
